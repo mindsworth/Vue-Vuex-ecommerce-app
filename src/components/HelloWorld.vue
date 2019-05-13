@@ -6,14 +6,19 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
     msg: String
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
+<style lang="scss" scoped>
+.hello {
+  h1 {
+    color: green;
+    font-size: 5rem;
+  }
+}
 </style>

@@ -1,9 +1,6 @@
 # Vue-Vuex-ecommerce-app
 This is an E-commerce application build with VueJs
 
-
-# vue-vuex-ecommerce-app
-
 ## Project setup
 ```
 yarn install
@@ -11,7 +8,7 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+yarn run start:dev
 ```
 
 ### Compiles and minifies for production
