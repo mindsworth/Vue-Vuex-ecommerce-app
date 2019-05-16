@@ -1,10 +1,10 @@
 <template>
   <div
-    class="flex ph3-ns items-center top-nav w-100 tl border-box f4 lh-title fw6 h3-ns bb b--light-gray"
+    class="flex ph3-ns items-center top-nav w-100 tl border-box f5 lh-title fw6 h3-ns bb b--light-gray"
   >
     <div class="w-20 flex items-center h-100">
       <img class="pr3" src="../../assets/icons/burger-menu.svg" alt="Burger Menu" width="25">
-      <a class="logo no-underline dark-gray fw9" href="/">BUY-LESS</a>
+      <a class="logo no-underline dark-gray fw9 f4" href="/">BUY-LEX</a>
     </div>
     <div class="w-100 bl pl3 b--light-gray h-100 flex items-center">
       <img class src="../../assets/icons/search.svg" alt="Search icon" width="25">
