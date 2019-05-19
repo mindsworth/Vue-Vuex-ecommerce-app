@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex ph3-ns items-center top-nav w-100 tl border-box f5 lh-title fw6 h3-ns bb b--light-gray"
+    class="flex ph3-ns items-center top-nav w-100 tl border-box f5 lh-title fw6 h3-ns bt bb b--light-gray"
   >
     <div class="w-20 flex items-center h-100">
       <img class="pr3" src="../../assets/icons/burger-menu.svg" alt="Burger Menu" width="25">
@@ -10,8 +10,8 @@
       <img class src="../../assets/icons/search.svg" alt="Search icon" width="25">
     </div>
     <div class="w-60 tr top-link h-100">
-      <a class="no-underline silver bl b--light-gray" href="#0">Sign In</a>
-      <a class="no-underline silver bl b--light-gray" href="#0">Sign Up</a>
+      <a class="no-underline silver bl b--light-gray" href="/">Sign In</a>
+      <a class="no-underline silver bl b--light-gray" href="/">Sign Up</a>
     </div>
   </div>
 </template>
@@ -28,6 +28,6 @@ export default {
 }
 .top-link .no-underline {
     display: inline-block;
-    padding: 1.2rem 3rem;
+    padding: 1.35rem 3rem;
 }
 </style>
