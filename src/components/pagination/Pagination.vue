@@ -1,7 +1,7 @@
 <template>
-	<div class="tc b mw8 center">
+	<div class="flex w-100 justify-center">
 		<div class="inline-flex overflow-hidden mt4 bg-white br2 ph3">
-			<nav>
+			<nav class="br b--moon-gray">
 				<button
 					class="fl dib link dim black f5 b ph2 pv3 bg-white ba bw0 pointer"
 					:style="getCurrentPage === 1 && disableClass"
@@ -13,14 +13,14 @@
 					<i class="f5 fas fa-chevron-left"></i> Previous
 				</button>
 				<button
-					class="fr dib link dim black f5 b ph2 pv3 bg-white ba bw0 pointer"
+					class="fr dib link dim black f5 b pl2 pr4 pv3 bg-white ba bw0 pointer pr-5"
 					:style="getCurrentPage === pageToShow && disableClass"
 					href="#"
 					title="Next"
 					:disabled="getCurrentPage === pageToShow"
 					@click="onNextPage()"
 				>
-					Next <i class="f5 fas fa-chevron-right"></i>
+					Next <i class="f5 fas fa-chevron-right" />
 				</button>
 
 				<div class="overflow-hidden center dt tc">
@@ -63,8 +63,8 @@
 </template>
 
 <script>
-import * as Types from "../../store/types";
 import { mapGetters, mapState, mapMutations } from "vuex";
+
 export default {
 	name: "Pagination",
 	data() {

@@ -1,7 +1,7 @@
 <template>
 	<div class="home">
-		<section class="cf mw9 center ph2 pv6">
-			<FilterComponent />
+		<section class="w-100 center pv5 flex">
+			<Aside />
 			<ProductList />
 		</section>
 	</div>
@@ -9,11 +9,11 @@
 
 <script>
 import ProductList from "../components/product/ProductList";
-import FilterComponent from "../components/filter/FilterComponent";
+import Aside from "../components/core/Aside";
 export default {
 	components: {
 		ProductList,
-		FilterComponent
+		Aside
 	}
 };
 </script>

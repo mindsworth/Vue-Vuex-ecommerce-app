@@ -1,4 +1,4 @@
-const paginationPipe = ( state, args ) => {
+const paginationPipe = (state, args) => {
 	const currentIndex = args.perPage * (args.currentPage - 1) || 0;
 
 	return args || args.perPage || args.currentPage

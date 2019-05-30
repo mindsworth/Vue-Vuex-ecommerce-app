@@ -2,7 +2,7 @@
 	<div
 		class="flex bg-white fixed z-999 ph3-ns items-center top-nav w-100 tl border-box f5 lh-title fw6 h3-ns bt bb b--moon-gray"
 	>
-		<div class="w-20 flex items-center h-100">
+		<div class="w-30 flex items-center h-100">
 			<img
 				class="pr3"
 				src="../../assets/icons/burger-menu.svg"

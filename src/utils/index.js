@@ -1,7 +1,7 @@
-import paginationPipe from './paginationPipe'
-export const createActionString = ( type, entity = 'App' ) =>
-	`[${entity}] ${type}`;
+import paginationPipe from './paginationPipe';
+import filterByBrand from './filterByBrand';
 
-export default {
-	paginationPipe
-}
+export {
+	paginationPipe,
+	filterByBrand
+};

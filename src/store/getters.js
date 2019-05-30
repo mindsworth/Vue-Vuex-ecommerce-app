@@ -1,18 +1,33 @@
-import paginationPipe from '../utils/paginationPipe';
+import { paginationPipe, filterByBrand } from '../utils/index';
 
 export const getters = {
-	getProducts(state) {
-		return state.products;
+	getBrands(state) {
+		return state.brands;
 	},
 	getCurrentPage(state) {
 		return state.currentPage;
 	},
-	paginate ( state ) {
-		const { currentPage, perPage, products } = state;
-		const compute = Math.ceil(products.length / perPage);
+	filterProducts(state) {
+		const brand = state.selectedBrands;
+		const products = state.products;
+
+		const filteredProduct = filterByBrand(products, brand);
+		return filteredProduct;
+	},
+	paginate(state) {
+		const { currentPage, perPage } = state;
+		const compute = Math.ceil(getters.filterProducts(state).length / perPage);
 
 		state.pageToShow = compute;
 
-		return paginationPipe(state.products, { currentPage, perPage });
+		return paginationPipe(getters.filterProducts(state), { currentPage, perPage });
+	},
+	brandsCount(state) {
+		const counts = {};
+		state.products.forEach(product => {
+			counts[product.brand] = counts[product.brand] + 1 || 1;
+		});
+
+		return counts;
 	}
 };
