@@ -1,19 +1,19 @@
 <template>
 	<div class="home">
 		<section class="cf mw9 center ph2 pv6">
+			<FilterComponent />
 			<ProductList />
-			<Pagination />
 		</section>
 	</div>
 </template>
 
 <script>
 import ProductList from "../components/product/ProductList";
-import Pagination from "../components/pagination/Pagination";
+import FilterComponent from "../components/filter/FilterComponent";
 export default {
 	components: {
 		ProductList,
-		Pagination
+		FilterComponent
 	}
 };
 </script>

@@ -9,7 +9,7 @@ Vue.use(Vuex);
 const store = new Vuex.Store({
 	state: {
 		products: phones,
-		perPage: 10,
+		perPage: 5,
 		currentPage: 1,
 		pageToShow: 0
 	},

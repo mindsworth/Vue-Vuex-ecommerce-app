@@ -1,20 +1,26 @@
 <template>
 	<Fragment>
-		<div v-for="product in products" :key="product.id">
+		<div v-for="product in paginate" :key="product.id">
 			<Product :product="product"/>
 		</div>
+		<Pagination />
 	</Fragment>
 </template>
 
 <script>
 import Product from "./Product";
 import { Fragment } from "vue-fragment";
+import Pagination from "../pagination/Pagination";
+import { mapGetters, mapState, mapMutations } from "vuex";
 
 export default {
 	name: "ProductList",
-	components: { Product, Fragment },
+	components: { Product, Fragment, Pagination },
 	data() {
-		return {products: this.$store.getters.paginate}
+		return {}
+	},
+	computed: {
+		...mapGetters(['paginate'])
 	}
 };
 </script>

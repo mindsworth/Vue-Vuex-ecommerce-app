@@ -1,4 +1,4 @@
-import paginationPipe from '../filters/paginationPipe';
+import paginationPipe from '../utils/paginationPipe';
 
 export const getters = {
 	getProducts(state) {
@@ -7,7 +7,7 @@ export const getters = {
 	getCurrentPage(state) {
 		return state.currentPage;
 	},
-	paginate(state) {
+	paginate ( state ) {
 		const { currentPage, perPage, products } = state;
 		const compute = Math.ceil(products.length / perPage);
 
