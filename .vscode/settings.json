@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "vetur.format.options.tabSize": 4,
+	"vetur.format.options.useTabs": true,
+	"editor.fontLigatures": true
+}
