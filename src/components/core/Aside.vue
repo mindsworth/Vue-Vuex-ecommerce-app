@@ -11,7 +11,7 @@
 			<ul class="list-group flex-row flex-wrap">
 				<li class="list ml4 mt2" v-for="brand in getBrands" :key="brand">
 					<label class="custom-checkbox text-capitalize relative pointer">
-						{{brand}} ({{brandsCount[brand]}})
+						{{brand}} <span title="Number of items" class="bg-gray ph1 white ba bw1 ml3 dib">{{brandsCount[brand]}}</span>
 						<Checkbox :brand="brand"/>
 					</label>
 				</li>
