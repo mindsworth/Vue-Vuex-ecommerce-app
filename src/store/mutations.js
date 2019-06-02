@@ -13,6 +13,8 @@ export const mutations = {
 	FILTER_BY_BRAND: (state, payload) => {
 		const brand = payload;
 
+		state.currentPage = 1;
+
 		if (!state.selectedBrands.includes(brand)) {
 			state.selectedBrands = [...state.selectedBrands, payload];
 		} else {
